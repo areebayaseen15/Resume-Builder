@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: whitesmoke;
+}
+.resume{
+    width: 51em;
+    height: auto;
+    background-color: #232339;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+ padding-bottom: 2em;
+}
+.aside{
+    width:15em;
+    height:auto;
+    color: white;
+    background-color: #232339;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.content{
+    width: 50em;
+    height: auto;
+}
+.aside .content img{
+    width: 15em;
+    height: 8em;
+
+}
+
+.container{
+   width: 15em;
+   height: auto;
+   padding: 24px;
+}
+.container header{
+   width: 50em;
+   height: 3em;
+
+}
+.container header h1{
+    font-size: 20px;
+}
+.container header p{
+    font-size: 0.75em;
+    color: #A478E8;
+}
+
+hr{
+    margin: 1em 0.25em;
+    border: none;
+  height: 1px;
+  background-color: #544a63; 
+}
+.container .quote{
+    height: auto;
+     left: 1.5;
+     right: 1.5;
+     top: 56px;
+     bottom: 1.25;
+     font-size: 14px;
+
+}
+
+.info{
+    width: 128px;
+}
+
+.info ul li{
+    list-style-type: none;
+    padding: 8px;
+    font-weight: bold;
+}
+.info ul li p{
+    font-size: 0.75em;
+    font-weight: 100;
+}
+.info ul li i{
+    margin-right: 8px;
+    font-size: 1em;
+    border: 5px solid  #544a63;
+    border-radius: 50%;
+    background-color: #544a63;
+}
+.info ul li p , .social-icons p{
+    margin-left: 2em;
+}
+.social-icons{
+  display: flex;
+  flex-direction: column;
+}
+.social-icons h1 , .languages h1{
+    margin-bottom: 0.75em;
+}
+.social-icons a.social-icons a{
+    color: white ;
+    font-size: 1em;
+    text-decoration: none;
+     
+}
+.social-icons i{
+    margin-right: 8px;
+    font-size: 1em;
+    border: 5px solid  #544a63;
+    border-radius: 50%;
+    background-color: #544a63;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+.social-icons p , .languages p{
+    color: white;
+    font-size: 0.95em;
+    
+}
+.social-icons span{
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+.social-icons #instagram{
+   color: rgb(192, 32, 59);
+   
+}
+
+.social-icons #facebook{
+    color: rgb(82, 82, 240);
+}
+.social-icons #linkdin{
+    color: rgb(37, 104, 131);
+}
+
+#web-icon{
+    color: #f39c12;
+}
+
+.portfolio a{
+    color: #7dc4ff;
+    text-decoration: none;
+}
+/* About Section */
+.main-container{
+    width: 50em;
+    height: auto;
+}
+
+.profile{
+    margin-left: 1em;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.profile p{
+    font-size: 1em;
+    line-height: 1.5;
+}
+.main-content{
+width: 520px;
+height: auto;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+margin: 2em;
+}
+
+.Education{
+    width: 500px;
+    height: 260px;
+    margin-top: 2em;
+    color: white;
+}
+.Education .edu-content{
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   justify-content: space-between;
+   width: 500px;
+   height: 200px;
+    margin-top: 14px;
+}
+.edu-content .stack{
+    height:91px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+.stack .cards{
+   width: 160px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+   background-color:#3a3a5f;
+    padding: 10px;
+}
+.cards i {
+    font-size: 24px;
+    color: #f39c12; 
+    margin-left: 2em;
+}
+.cards h4{
+    font-size: 13px;
+    font-weight: 1000;
+}
+.cards p{
+    font-size: 12px;
+}
+
+.Skills{
+    width: 500px;
+    height: 146px;
+    color: white;
+}
+
+.skills-content{
+    width: 346px;
+    height: auto;
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+ .section{
+    height: 41px;
+    width: 500px;
+    margin-bottom: 10px;
+    display: flex;
+    
+}
+heading{
+    height: 41px;
+    width: 56px;
+    margin-right: 8px;
+    
+}
+heading i{
+    padding-left:1em;
+    color: #A478E8;
+
+}
+heading p{
+    font-size: 14px;
+    font-weight: 1000;
+    margin-left: 3px;
+}
+
+.Stack{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px; 
+  margin: 2px;
+  overflow-wrap: break-word;
+}
+.Stack span{
+    background-color: #3a3a5f;
+    padding: 5px 8px;
+    border-radius: 4px; 
+    display: inline-block;
+    margin-left: 5px;
+    overflow-wrap: normal;
+}
+
+
+/* Project Section */
+.latest-projects {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.latest-projects h2 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color:#3a3a5f;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(50% - 10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-details {
+    padding: 16px;
+}
+
+.project-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.project-details p {
+    margin-bottom: 10px;
+    color: #b3b3b3;
+}
+
+.project-details a{
+    color: #7dc4ff;
+    text-decoration: none;
+}
+
+
+/* Tools style */
+.tools{
+    margin-top: 2em;
+    color:white
+
+}
+.tools-content{
+    display: flex;
+    width: auto;
+    height: 100px;
+    overflow-wrap: anywhere;
+}
+.tools-content .cards{
+    padding:0 2em;
+   
+}
+
+#figma{
+   padding-left: 0px;
+}
+#figma p{
+    padding-left: 2.75em;
+}
+
+
+.main-content {
+    position: relative; 
+    padding-left: 20px; 
+    margin-bottom: 2em; 
+}
+
+.main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 2px; 
+    height: 100%;
+    background-color: #544a63; 
+}
+
+.main-content::after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: -4px; 
+    width: 10px;
+    height: 10px;
+    background-color: #544a63;
+    border-radius: 50%;
+}
+
+
+@media (max-width:480px){
+    .resume{
+        margin: auto;
+    }
+}
+
+.togglebtn{
+    background-color: #f39c12;
+    padding:0.5em;
+    border-radius: 30%;
+    margin: 0 35%;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+}
