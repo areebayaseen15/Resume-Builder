@@ -8,3 +8,14 @@ button.addEventListener("click", function () {
         skillsSection.style.display = "none";
     }
 });
+var icon = document.getElementById("icon");
+var resumeElement = document.getElementById('resume');
+icon.onclick = function () {
+    resumeElement.classList.toggle("dark-theme");
+    if (resumeElement.classList.contains("dark-theme")) {
+        icon.src = "sun-image.png";
+    }
+    else {
+        icon.src = "moon.png";
+    }
+};
