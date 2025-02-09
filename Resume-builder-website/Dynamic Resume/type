@@ -1,0 +1,47 @@
+<section class="tools">      
+                                 
+    <h1>Tools</h1>
+    <div class="tools-content">
+           
+        ${tools.map((tool) => `
+<div class="toolcards">
+<img src="${tool.toolImageUrl}">
+<p>${tool.toolName}</p>
+</div>
+`).join("")}
+</div>
+
+resumeHTML += `            
+
+<section class="tools">
+ <h2>Tools</h2>
+ <div class="tools-content">
+     ${tools
+       .map(
+         (tool) => `
+         <div class="cards">
+             <img src="${tool.Image}" alt="" width="50px" height="50px">
+             <p>${tool.title}</p>
+         </div>
+     `
+       )
+       .join("")}
+ </div>
+</section>
+
+
+
+
+
+const tools = Array.from(toolContainer.querySelectorAll(".tool-item")).map((tool) => {
+    const inputs = tool.querySelectorAll("input") as NodeListOf<HTMLInputElement>;
+    const fileInput = tool.querySelector("#tool-image") as HTMLInputElement;
+
+    // Use URL.createObjectURL to generate a URL for the uploaded file
+    const toolImageUrl = fileInput.files?.[0] ? URL.createObjectURL(fileInput.files[0]) : "";
+
+    return {
+        title: inputs[0]?.value.trim(),
+        Image: toolImageUrl,
+    };
+});

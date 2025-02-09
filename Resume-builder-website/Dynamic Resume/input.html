@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cv.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+  <header class="header">
+    <div class="hcontainer">
+      <div class="logo">Pix Resume</div>
+      <nav>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+      
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/samplecv.html">Demo</a></li>
+          
+        </ul>
+      </nav>
+     
+    </div>
+  </header>
+
+
+    <form id="resumeForm">
+        <h1>Generate Your Resume:</h1>
+
+        <div class="sections">
+            <div class="maindetails" >
+                <section id="personal-details">
+                    <h1>Personal Details:</h1>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="profile-image">Upload Profile Image:</label>
+                            <input type="file" id="profile-image" name="profile-image" accept="image/*">
+                        </div>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="profession">Profession:</label>
+                            <input type="text" id="profession" name="profession" placeholder="Who you are" required>
+                        </div>
+                        <div>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="input">
+                            <label for="phone">Contact Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" maxlength="11"
+                                required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                      <div class="input">
+                          <label for="linkdin">Facebook Account:</label>
+                          <input type="text" id="facebook" name="linkdin" placeholder="Facebook profile name" required>
+                      </div>
+                            <div>
+                              <label for="github">Instagram Account:</label>
+                              <input type="text" id="instagram" name="github" placeholder="Insta profile name" required> 
+                            </div>
+                     </div>
+                     
+  
+                     <div class="flex">
+                      <div class="input">
+                          <label for="linkdin">LinkedIn Profile:</label>
+                          <input type="text" id="linkdin" name="linkdin" placeholder="LinkedIn profile name" required>
+                      </div>
+                      <div>
+                          <label for="github">Github Account:</label>
+                          <input type="text" id="github" name="github" placeholder="github account name" required> 
+                      </div>
+                     </div>
+                 
+                     <div class="flex">
+                      <div class="input">
+                          <label for="linkdin">Quote: (optional)</label>
+                          <input type="text" id="quote" name="quote" placeholder="Quote related to your profession">
+                          
+                      </div>
+                  <div>
+                      <label for="linkdin">Quote Author: (optional)</label>
+                      <input type="text" id="quoteAuthor" name="quote" placeholder="Quote Author">
+                  </div>
+                     </div>
+                     <label for="portfolio">Your Portfolio:</label>
+                     <input type="url" id="portfolio" name="portfolio" placeholder="portfolio URL" required>
+         
+                </section>
+                <section>
+                    <h1>Profile:</h1>
+                    <label for="profile">About You:</label>
+                    <textarea id="profile" name="profile" placeholder="Your resume profile"></textarea>
+                </section>
+
+                <section>
+                    <h1>Languages</h1>
+                    <div id="language-container">
+                        <label for="language">Language:</label>
+                      
+                                <input
+                                    type="text"
+                                    id="language"
+                                    placeholder="e.g: english , urdu"
+                                    required
+                                />
+                            </div>
+                            <button id="add-language-button">Add Language</button>
+    
+                            </section>
+                          
+</div>
+                       
+           
+            <div class="other-details">
+               
+                <section>
+                    <h1>Education</h1>
+                    <div id="education-container">
+                        <div  class="resume-info edu-info" id="ed" for="edAdd"> 
+                            <label for="edAdd">Education:</label>
+                            <div class="education-item" id="content-item">
+                              
+                                <input 
+                                class="form-control edField"  type="text" placeholder="Degree/Certificate" required />
+                           
+                              <input   class="form-control edField" type="text" placeholder="Institution" required />
+            
+                    
+                              <input class="form-control edField" type="text" placeholder="Year" required />
+            
+                           </div>
+                          </div>
+                    </div>
+                    <button type="button" id="add-education-button">Add Education</button>
+                </section>
+              
+                <section>
+                    <h1>Skills</h1>
+                    <div id="skills-container">
+                        <label for="skills">Skills:</label>
+                        <div class="skill-item" id="content-item">
+                              
+                            <input 
+                            class="form-control edField"  type="text" placeholder="your skill" required />
+                       
+        
+            
+        
+                       </div>
+                        
+                    </div>
+                    <button type="button" id="add-skill-button">Add Skill</button>
+                </section>
+
+              <!-- project section -->
+                <section >
+                    <h1>Latest Projects</h1>
+                    <div id="project-container">
+                        <label for="project">Project:</label>
+                        <div class="project-item" id="content-item">
+                        <input type="text" id="project-title" placeholder="Project Title" required />
+                        <input type="file" id="project-image" name="profile-image" accept="image/*">
+                        <input type="text" id="project-link" placeholder="Project Link (e.g., https://example.com)" required />
+
+                    </div>
+                 
+                    </div>
+                    <button type="button" id="add-project-button">Add Project</button>
+                </section>
+
+                        <section id="optional">
+                            <h1>Optional Fields</h1>
+                            <section>
+                                <div id="experience-container">
+                                    <!-- <h1>Experience</h1> -->
+                                </div>
+                    
+                                    <button type="button" id="add-experience-button">Add Experience</button>
+                                  </section>
+                    
+                                  <section>
+                                    <div id="tool-container">
+                                        <!-- <h1>Tools</h1> -->
+                                    </div>
+                        
+                                        <button type="button" id="add-tool-button">Add tool</button>
+                                      </section>
+                        </section>
+
+               
+
+
+            </div>
+        </div>
+
+        <button type="submit" id="generate-resume-button">Generate Resume</button>
+    </form>
+
+    <div id="resume">
+        <!-- Generated resume will appear here -->
+    </div>
+        <button class="Dbutton" id= "download-btn">Download as PDF</button>
+
+
+
+
+
+        <!-- Footer -->
+  <footer class="footer">
+    
+    <div class="f-container">
+     
+          <div class="footer-container">
+            <h2 class="footer-title">Pix Resume</h2>
+
+            <div id="social-icons">
+              <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      </div>
+
+      <p>© 2024 Pix Resume. All rights reserved.</p>
+
+      </div>
+
+    </div>
+  </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+
+
+ 
+    <script src="app.js"></script>
+</body>
+
+</html>
